@@ -1,16 +1,68 @@
-.me-auto{
-    width: 80%;
+.container-fluid {
+    width: 100%;
+    background-color: #343a40;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
   
+  .navbar-toggler {
+    order: -1;
+  }
+  
+  .navbar-brand {
+    margin-right: auto;
+    font-weight: bold;
+  }
+  
+  .me-auto {
     display: flex;
-    justify-content: space-between;
-}
-
-@media (min-width: 768px) {
-    /* CSS styles to apply when the viewport width is 768px or more */
-    .me-auto {
-            width: 80%;
-            margin-left: 20%;
-            display: flex;
-            justify-content: space-between;
-        }
-}
+    justify-content: space-around; /* Adjust the spacing between buttons */
+  }
+  
+  
+  .nav-link {
+    color: #ffffff;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .dropdown-menu {
+    background-color: #343a40;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-item {
+    color: #ffffff;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #495057;
+  }
+  
+  .profile-icon {
+    color: #ffffff;
+  }
+  
+  .profile-icon:hover {
+    color: #f8f9fa;
+  }
+  
+  @media (max-width: 991.98px) {
+    .container-fluid {
+      padding: 10px;
+    }
+  
+    .navbar-nav > li {
+      width: 33.33%;
+      text-align: center;
+    }
+  
+    .navbar-nav > li > a {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
